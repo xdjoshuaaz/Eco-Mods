@@ -1,3 +1,5 @@
+using Eco.Gameplay.Components;
+using Eco.Shared.Localization;
 using Eco.Shared.Utils;
 using xdjoshuaaz;
 
@@ -9,13 +11,12 @@ namespace xdjoshuaaz {
 
 namespace Eco.Mods.TechTree {
 #region Boxes
-    public partial class IceboxObject {
-        
+    public partial class IceboxObject {       
 
         partial void ModsPostInitialize() {
             var storage = this.GetComponent<PublicStorageComponent>();
             storage.ShelfLifeMultiplier *= Config.ShelfLifeScalar;
-            Log.WriteLine($"{GetType().Name} ShelfLifeMultiplier is now {storage.ShelfLifeMultiplier}");
+            Log.WriteLine(new LocString($"{GetType().Name} ShelfLifeMultiplier is now {storage.ShelfLifeMultiplier}"));
         }
     }
 
@@ -23,7 +24,7 @@ namespace Eco.Mods.TechTree {
         partial void ModsPostInitialize() {
             var storage = this.GetComponent<PublicStorageComponent>();
             storage.ShelfLifeMultiplier *= Config.ShelfLifeScalar;
-            Log.WriteLine($"{GetType().Name} ShelfLifeMultiplier is now {storage.ShelfLifeMultiplier}");
+            Log.WriteLine(new LocString($"{GetType().Name} ShelfLifeMultiplier is now {storage.ShelfLifeMultiplier}"));
         }
     }
 
@@ -31,7 +32,7 @@ namespace Eco.Mods.TechTree {
         partial void ModsPostInitialize() {
             var storage = this.GetComponent<PublicStorageComponent>();
             storage.ShelfLifeMultiplier *= Config.ShelfLifeScalar;
-            Log.WriteLine($"{GetType().Name} ShelfLifeMultiplier is now {storage.ShelfLifeMultiplier}");
+            Log.WriteLine(new LocString($"{GetType().Name} ShelfLifeMultiplier is now {storage.ShelfLifeMultiplier}"));
         }
     }
 #endregion
@@ -41,7 +42,7 @@ namespace Eco.Mods.TechTree {
         partial void ModsPostInitialize() {
             var storage = this.GetComponent<PublicStorageComponent>();
             storage.ShelfLifeMultiplier *= Config.ShelfLifeScalar;
-            Log.WriteLine($"{GetType().Name} ShelfLifeMultiplier is now {storage.ShelfLifeMultiplier}");
+            Log.WriteLine(new LocString($"{GetType().Name} ShelfLifeMultiplier is now {storage.ShelfLifeMultiplier}"));
         }
     }
 
@@ -49,7 +50,7 @@ namespace Eco.Mods.TechTree {
         partial void ModsPostInitialize() {
             var storage = this.GetComponent<PublicStorageComponent>();
             storage.ShelfLifeMultiplier *= Config.ShelfLifeScalar;
-            Log.WriteLine($"{GetType().Name} ShelfLifeMultiplier is now {storage.ShelfLifeMultiplier}");
+            Log.WriteLine(new LocString($"{GetType().Name} ShelfLifeMultiplier is now {storage.ShelfLifeMultiplier}"));
         }
     }
 #endregion
